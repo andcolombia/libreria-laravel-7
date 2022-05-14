@@ -16,6 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('index.php', function () {
+    return view('welcome');
+});
 Route::get('login.php', function () {
     return view('login');
 });
