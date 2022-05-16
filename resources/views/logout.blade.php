@@ -10,7 +10,7 @@ $oidc = new OpenIDConnectClient('https://qaautenticaciondigital.and.gov.co',
 
 $oidc->setRedirectURL('http://localhost:3000/login.php');
 $oidc->setCodeChallengeMethod('S256');
-$idtoken = $oidc->getIdToken();
+$idtoken = $_SESSION["id_token"];
 
 session_destroy();
 
